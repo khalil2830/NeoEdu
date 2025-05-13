@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="527.0" prefWidth="995.0" style="-fx-background-color: FFEDC4FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.neoedu.controllers.AfficherInscriptions">
+   <children>
+      <TableView fx:id="tableView" layoutY="14.0" prefHeight="314.0" prefWidth="955.0">
+        <columns>
+          <TableColumn fx:id="nomCol" prefWidth="75.19997882843018" text="Nom" />
+          <TableColumn fx:id="prenomCol" prefWidth="72.00003051757812" text="Prenom" />
+            <TableColumn fx:id="cinCol" prefWidth="69.60000610351562" text="CIN" />
+            <TableColumn fx:id="niveauCol" prefWidth="76.80006408691406" text="niveau" />
+            <TableColumn fx:id="atelierCol" prefWidth="88.0" text="ateliers" />
+            <TableColumn fx:id="coursCol" prefWidth="95.199951171875" text="cours" />
+            <TableColumn fx:id="abonnementCol" minWidth="4.0" prefWidth="95.20001220703125" text="abonnement" />
+            <TableColumn fx:id="methodeCol" minWidth="0.0" prefWidth="72.0" text="methode" />
+            <TableColumn fx:id="montantCol" minWidth="5.5999755859375" prefWidth="70.39996337890625" text="montant " />
+            <TableColumn fx:id="statueCol" prefWidth="64.800048828125" text="statue" />
+            <TableColumn fx:id="finCol" minWidth="0.0" prefWidth="127.9998779296875" text="fin de l'abonnement" />
+            <TableColumn fx:id="idCol" prefWidth="103.2000732421875" text="id" />
+        </columns>
+      </TableView>
+      <Button layoutX="226.0" layoutY="446.0" mnemonicParsing="false" onAction="#supprimerPaiement" prefHeight="44.0" prefWidth="95.0" text="suprimer" />
+      <TextField fx:id="idDeleteTF" layoutX="26.0" layoutY="446.0" prefHeight="32.0" prefWidth="178.0" promptText="id a sup" />
+      <Button layoutX="880.0" layoutY="338.0" mnemonicParsing="false" onAction="#rafraichirTable" text="refresh" />
+      <TextField fx:id="nomField" layoutX="432.0" layoutY="388.0" />
+      <TextField fx:id="prenomField" layoutX="432.0" layoutY="410.0" />
+      <TextField fx:id="cinField" layoutX="432.0" layoutY="436.0" />
+      <TextField fx:id="niveauEtudeField" layoutX="432.0" layoutY="455.0" />
+      <TextField fx:id="coursField" layoutX="582.0" layoutY="388.0" />
+      <TextField fx:id="typeAbonnementField" layoutX="582.0" layoutY="410.0" />
+      <TextField fx:id="methodePaiementField" layoutX="582.0" layoutY="436.0" />
+      <TextField fx:id="atelierField" layoutX="432.0" layoutY="481.0" />
+      <TextField fx:id="montantField" layoutX="583.0" layoutY="455.0" />
+      <TextField fx:id="statutPaiementField" layoutX="584.0" layoutY="481.0" />
+      <Button layoutX="774.0" layoutY="436.0" mnemonicParsing="false" onAction="#modifierPaiement" prefHeight="44.0" prefWidth="95.0" text="modifier" />
+   </children>
+</AnchorPane>
