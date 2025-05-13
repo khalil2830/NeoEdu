@@ -6,6 +6,8 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -51,8 +53,8 @@
       <DatePicker fx:id="dateTF" layoutX="14.0" layoutY="269.0" promptText="date d'incription" />
       <Label fx:id="dateFinLabel" layoutX="14.0" layoutY="345.0" prefHeight="32.0" prefWidth="293.0" textFill="#387499" />
       <Label fx:id="montantLabel" layoutX="252.0" layoutY="159.0" prefHeight="54.0" prefWidth="322.0" textFill="#27a129" />
-      <ComboBox fx:id="atelierComboBox" layoutX="413.0" layoutY="90.0" prefWidth="150.0" promptText="ateliers" />
-      <ComboBox fx:id="coursComboBox" layoutX="413.0" layoutY="126.0" prefWidth="150.0" promptText="cours en ligne" />
+      <ComboBox fx:id="atelierComboBox" layoutX="413.0" layoutY="102.0" prefWidth="150.0" promptText="ateliers" />
+      <ComboBox fx:id="coursComboBox" layoutX="413.0" layoutY="139.0" prefWidth="150.0" promptText="cours en ligne" />
       <Label layoutX="268.0" layoutY="93.0" prefHeight="17.0" prefWidth="142.0" text="activité supplementaire:">
          <font>
             <Font size="13.0" />
@@ -62,5 +64,10 @@
       <Label layoutX="265.0" layoutY="127.0" prefHeight="26.0" prefWidth="134.0" text="cours matinal:80dt/mois" />
       <Label layoutX="257.0" layoutY="139.0" prefHeight="26.0" prefWidth="150.0" text="1 atelier/semaine:50dt/mois" />
       <CheckBox fx:id="payeCheckBox" layoutX="452.0" layoutY="219.0" mnemonicParsing="false" text="paiement" />
+      <ImageView fitHeight="81.0" fitWidth="105.0" layoutX="488.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/496623306_612872638469035_2510810543255498892_n.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
